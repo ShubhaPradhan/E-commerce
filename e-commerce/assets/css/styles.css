@@ -1,34 +1,31 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
+header {
     min-height: 10vh;
     background: #000;
 
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 20% auto;
 }
 
-aside{
- background: red;
- grid-row-start: span 2;
- min-height: 80vh;
+aside {
+    background: red;
+    grid-row-start: span 2;
 }
 
-main{
-    min-height:80vh;
+main {
+    min-height: 80vh;
     background: green;
 }
-footer{
+
+footer {
     background: yellow;
-    min-height: 90vh;
-}   
-
-
-
+    min-height: 10vh;
+}
