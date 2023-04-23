@@ -31,25 +31,64 @@ header {
     padding: 0 var(--header-padding-horizontal);
 }
 
-
-header nav img {
+header  img.logo {
     width: 100px;
     height: 40px;
     margin-top: 10px;
 }
 
-/* HEADER */
+
+/* Main Container */
 .container {
     display: grid;
     grid-template-columns: 20% auto;
 }
 
 /* SIDEBAR */
-aside {
+.sidebar {
     background: var(--background-color);
     grid-row-start: span 2;
     border-right: 2px solid var(--grey);
-    margin: 1rem 0;
+}
+
+.sidebar .nav-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid var(--grey);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar .nav-item:hover{
+    background: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar .dropdown{
+    position: absolute;
+    width: 140px;
+    background: var(--grey);
+    right: -140px;
+    top: 0;
+    display: none;
+} 
+
+.sidebar .nav-item:hover .dropdown{
+    display: block;
+}
+
+.sidebar .dropdown .dropdown-item{
+    border-bottom: 1px solid var(--background-color);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    color: #000;
 }
 
 /* HOME-MAIN */
