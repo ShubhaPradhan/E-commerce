@@ -60,7 +60,7 @@ header  img.logo {
     font-size: 16px;
     font-weight: 600;
     padding: 1rem 2rem;
-    background: #fff;
+    background: var(--grey);
     transition: all 0.3s ease-in-out;
     border-radius: 20px 0 20px 0;
     margin: 1rem 0;
