@@ -29,6 +29,7 @@ header {
     flex-direction: row;
     align-items: center;
     padding: 0 var(--header-padding-horizontal);
+    border-radius: 50px 0 0 0;
 }
 
 header  img.logo {
@@ -36,8 +37,7 @@ header  img.logo {
     height: 40px;
     margin-top: 10px;
 }
-
-
+/* 
 /* Main Container */
 .container {
     display: grid;
@@ -62,6 +62,8 @@ header  img.logo {
     padding: 1rem 2rem;
     background: #fff;
     transition: all 0.3s ease-in-out;
+    border-radius: 20px 0 20px 0;
+    margin: 1rem 0;
 }
 
 .sidebar .nav-item:hover{
@@ -91,6 +93,12 @@ header  img.logo {
     color: #000;
 }
 
+.sidebar .dropdown .dropdown-item:hover{
+    background: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
 /* HOME-MAIN */
 main {
     min-height: 80vh;
@@ -102,4 +110,5 @@ main {
 footer {
     background: var(--teritiary-color);
     min-height: 10vh;
+    border-radius: 0 0 50px;
 }
