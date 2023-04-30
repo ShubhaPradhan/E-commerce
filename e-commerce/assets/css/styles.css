@@ -98,6 +98,7 @@ header img.logo {
 
 .sidebar .dropdown .dropdown-item:hover {
     background: var(--primary-color);
+    color: #000;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
