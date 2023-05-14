@@ -12,17 +12,25 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-       
+       <div class="logo-whole">
             <a href="./index.html">
                 <img src="./assets/images/logos/logo.png" alt="amazon-logo" class="logo">
             </a>
             <p>Toddley</p>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
     </header>
     <div class="container">
         <aside class="sidebar">
@@ -55,6 +63,14 @@
         <footer></footer>
     
 </div>
+<script>
+    const searchIcon = document.querySelector(".search-bar .icon");
+    const input = document.querySelector(".search-bar input");
+    searchIcon.addEventListener('click', () => {
+        input.classList.toggle('active'); 
+        console.log("shubha");
+  });
+</script>
 </body>
 
 </html>
