@@ -37,12 +37,12 @@ header {
     border-radius: 50px 0 0 0;
 }
 
-header a img{
+header a img {
     height: 30px;
     width: 34px;
 }
 
-header .logo-whole{
+header .logo-whole {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -54,46 +54,51 @@ header .logo-whole:hover {
     cursor: pointer;
 }
 
-header .search-bar{
+header .search-bar {
+    position: relative;
     margin-left: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-header .search-bar input{
+header .search-bar input {
     height: 50px;
     outline: none;
     border: none;
     width: 300px;
-    padding: 0.5rem 1rem;
-    display: none;
+    padding: 0.5rem 0rem 0rem 1rem;
 }
 
-header .search-bar input.active{
-    display: block;
-}
-
-header .search-bar .icon{
+header .search-bar .icon {
     height: 50px;
+    width: 50px;
     padding: 0.5rem 1rem;
     background: var(--primary-color);
     align-items: center;
     display: flex;
 }
 
-header .search-bar .icon i{
+header .search-bar .icon i {
     color: white;
 }
 
 
 @keyframes mymove {
-    0%   {left: 2%;}
-    50%  {left: 40%;}
-    100% {left: 2%;}
+    0% {
+        left: 2%;
+    }
+
+    50% {
+        left: 40%;
+    }
+
+    100% {
+        left: 2%;
+    }
 }
 
-header p{
+header p {
     padding-left: 1rem;
     font-weight: 600;
     color: #fff;
