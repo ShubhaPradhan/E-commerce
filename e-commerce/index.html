@@ -28,12 +28,33 @@
             </a>
             <p>Toddley</p>
         </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <div class="icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="right-wrapper">
+            <div class="socials">
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
             </div>
         </div>
+
     </header>
     <div class="container">
         <aside class="sidebar">
@@ -71,14 +92,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         // slideToggle the search bar on click of the search icon from left to right
-
-
-
         const searchIcon = document.querySelector(".search-bar .icon");
         const input = document.querySelector(".search-bar input");
         searchIcon.addEventListener('click', () => {
-
-            // slideToggle the input on click of the search icon from left to right  
             $(".search-bar input").toggle("slide");
         });
     </script>

@@ -27,7 +27,7 @@ body {
 /* HEADER */
 header {
     position: relative;
-    min-height: 10vh;
+    min-height: 15vh;
     background: var(--black);
     display: flex;
     flex-direction: row;
@@ -52,6 +52,31 @@ header .logo-whole {
 
 header .logo-whole:hover {
     cursor: pointer;
+}
+
+header .right-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+header .right-wrapper .socials {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+}
+
+header .right-wrapper .socials .icon {
+    margin-right: 1rem;
+    color: white;
+}
+
+header .right-wrapper .socials .icon:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 header .search-bar {
