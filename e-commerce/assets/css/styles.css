@@ -247,6 +247,11 @@ main {
 /* Slider */
 
 /* Read More */
+.lights {
+    padding: 0 1rem;
+    text-align: center;
+    margin: 2rem 0 0.6rem 0;
+}
 
 .read-more {
     padding: 0 1rem;
@@ -255,8 +260,6 @@ main {
 .read-more .more {
     display: none;
 }
-
-
 
 .read-more-btn {
     background: var(--primary-color);

@@ -83,6 +83,10 @@
             </div>
             <div class="nav-item">Hot Ack</div>
 
+            <div class="lights">
+                Hot Offers
+            </div>
+
             <!-- Read More text  -->
             <div class="read-more">
                 <div class="read-more-text">
@@ -167,8 +171,14 @@
                 more.style.display = "none";
                 readMoreBtn.innerHTML = "Read More <i class='fa-solid fa-chevron-down'></i>";
             }
-
         });
+
+        const lights = document.querySelector(".lights");
+        var colors = ["#ee3300", "cyan", "#99ff33", "orange", "magenta", "#3399ff"]
+        setInterval(() => {
+            var color = colors[Math.floor(Math.random() * colors.length)];
+            lights.style.color = color;
+        }, 1000);
     </script>
 </body>
 
