@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Toddley | Aesthetic Watches</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
-
+    <link rel="icon" type="image/x-icon" href="./assets/images/logos/logo.png">
     <!-- GOOGLE FONTS -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,8 +82,47 @@
                 </div>
             </div>
             <div class="nav-item">Hot Ack</div>
+
+            <!-- Read More text  -->
+            <div class="read-more">
+                <div class="read-more-text">
+                    <p>Attack feet behind the couch destroy couch flop over give attitude hide when guests come over
+                        hopped up on goofballs<span class="more"> hunt anything that moves intently stare at the same
+                            spot bag stretch why
+                            must they do that, chase mice chew ipad power cord rub face on everything swat at dog
+                            intrigued
+                            by the shower stand in front of the computer screen chase imaginary bugs sweet beast under
+                            the
+                            bed lick butt make muffins. Hunt anything that moves intrigued by the shower behind the
+                            couch
+                            hide when guests come over hopped up on goofballs attack feet why must they do that swat at
+                            dog
+                            chase mice sweet beast under the bed, lick butt bag stretch give attitude chew ipad power
+                            cord
+                            chase imaginary bugs intently stare at the same spot .</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Read more btn -->
+            <div class="read-more-btn">
+                <div class="read-more-btn-text">Read More <i class="fa-solid fa-chevron-down"></i></div>
+            </div>
+
         </aside>
-        <main></main>
+        <main>
+            <div class="slider">
+                <div class="buttons">
+
+                    <div class="prev-btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="next-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </main>
         <footer></footer>
 
     </div>
@@ -96,6 +135,39 @@
         const input = document.querySelector(".search-bar input");
         searchIcon.addEventListener('click', () => {
             $(".search-bar input").toggle("slide");
+        });
+
+        const slider = document.querySelector(".slider");
+        let i = 0;
+        const img = document.createElement("img");
+        img.src = `./assets/images/slide${(i + 1) % 6}.jpg`;
+        console.log(img.src);
+        img.alt = `slide ${(i + 1) % 6}`;
+        slider.appendChild(img);
+        i++;
+
+        setInterval(() => {
+            img.src = `./assets/images/slide${(i + 1) % 6}.jpg`;
+            img.alt = `slide ${(i + 1) % 6}`;
+            slider.appendChild(img);
+            i++;
+            if (i == 5) i = 0;
+        }, 4000);
+
+        // Read more btn
+        const readMoreBtn = document.querySelector(".read-more-btn");
+        const more = document.querySelector(".more");
+
+        // show only 30 words initiallt and show all words when show more is clicked
+        readMoreBtn.addEventListener('click', () => {
+            if (more.style.display == "none") {
+                more.style.display = "inline";
+                readMoreBtn.innerHTML = "Read Less <i class='fa-solid fa-chevron-up'></i>";
+            } else {
+                more.style.display = "none";
+                readMoreBtn.innerHTML = "Read More <i class='fa-solid fa-chevron-down'></i>";
+            }
+
         });
     </script>
 </body>

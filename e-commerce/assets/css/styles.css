@@ -166,6 +166,7 @@ header p {
 }
 
 .sidebar .dropdown {
+    z-index: 100;
     position: absolute;
     width: 140px;
     background: var(--background-color);
@@ -198,8 +199,78 @@ header p {
 /* HOME-MAIN */
 main {
     min-height: 80vh;
+    width: auto;
     background: var(--background-color);
 }
+
+
+
+/* Slider */
+.slider {
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 480px;
+}
+
+.slider img {
+    object-fit: cover;
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+.slider .buttons {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50);
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+.slider .buttons i {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.slider .buttons i:hover {
+    cursor: pointer;
+}
+
+
+/* Slider */
+
+/* Read More */
+
+.read-more {
+    padding: 0 1rem;
+}
+
+.read-more .more {
+    display: none;
+}
+
+
+
+.read-more-btn {
+    background: var(--primary-color);
+    margin: 1rem 2rem;
+    display: inline-block;
+    padding: 0.4rem 2rem;
+    border-radius: 5px;
+}
+
+.read-more-btn:hover {
+    cursor: pointer;
+}
+
+/* Read More */
 
 
 /* FOOTER */
