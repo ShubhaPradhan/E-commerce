@@ -315,13 +315,61 @@ main {
 
 .products .product img {
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+    z-index: 1000;
 }
+
+
+.products .product img:hover {
+    transition: all 0.3s ease-in-out;
+  transform: scale(1.3);
+}
+
 
 .products .product .product-info {
     padding: 1.2rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.products .buttons{
+    display: flex;
+    flex-direction: row;
+}   
+
+.products .buttons .browse,
+.products .buttons .cart{
+    background: var(--primary-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    border: 2px solid var(--primary-color);
+}
+
+.products .buttons .browse:hover,
+.products .buttons .cart:hover{
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+    border: 2px solid var(--primary-color);
+}
+
+.products .buttons .browse:hover i,
+.products .buttons .cart:hover i{
+    transition: all 0.3s ease-in-out;
+    color: #000000da;
+}
+
+.products .buttons i{
+    color: #ffffffd2;
+
 }
 
 .products .product .product-info .product-name {
@@ -335,32 +383,10 @@ main {
 }
 
 
-/* Zoom */
-.img-zoom-lens {
-    position: absolute;
-    border: 1px solid #d4d4d4;
-    /*set the size of the lens:*/
-    width: 40px;
-    height: 40px;
-
-}
-
-.img-zoom-result {
-    border: 1px solid #d4d4d4;
-    /*set the size of the result div:*/
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    top: -150px;
-    left: -300px;
-    z-index: 10;
-    display: none;
-    background-repeat: no-repeat;
-}
+/* lab 11 */
 
 
-
-/* Zoom */
+.product-img 
 
 
 /* Products Card */
